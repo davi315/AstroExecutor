@@ -1,6 +1,6 @@
 ![](https://github.com/FlessHacker/AstroExecutor/blob/main/main.png)
 
-[DOWNLOAD](https://github.com/FlessHacker/AstroExecutor/archive/refs/heads/main.zip)
+[DOWNLOAD FREE](https://github.com/FlessHacker/AstroExecutor/archive/refs/heads/main.zip)
 
 NEW VERSION 1.3.3 UPLOADED 
 
