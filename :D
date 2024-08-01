@@ -1,0 +1,91 @@
+local Run = game:GetService("RunService")
+local CoreGui = game:GetService("CoreGui")
+local Teams = game:GetService("Teams")
+local UserInput = game:GetService("UserInputService")
+local Workspace = game:GetService("Workspace")
+local CoreGui = game:GetService("CoreGui")
+local Players = game:GetService("Players")
+
+local plr = game.Players.LocalPlayer
+local mouse = plr:GetMouse()
+
+local secret953 = secret953 or debug.getupvalues
+local secret500 = secret500 or debug.setupvalue
+local getreg = getreg or debug.getregistry
+
+local cam = workspace.CurrentCamera
+	local blur = Instance.new("BlurEffect")
+	blur.Size = 40
+	blur.Parent = cam
+	blur.Enabled = true
+
+local Rendering = {
+	ESP = false,
+}
+
+local CharacterCheats = {
+	SpeedHax = false,
+	JumpHax = false,
+	GravityHax = false,
+}
+
+local SpawningSystem = {
+	LootDataBase = false,
+	VehicleDataBase = false,
+}
+
+local Teleporting = {
+	TeleportTo = false,
+}
+
+local MapModding = {
+	DeleteRoads = false,
+	DeleteBuildings = false,
+	DeleteTrees = false,
+}
+
+local Settings = {
+	RainbowUII = false,
+	PrintPlayers = false,
+}
+
+local Utility = {
+	AmmoPackage = false,
+	ShotgunPackage = false,
+	SniperPackage = false,
+	ScarPackage = false,
+	ArmorPackage = false,
+	PistolPackage = false,
+}
+
+function PlayerPrint()
+	for i, v in pairs(game.Players:GetChildren()) do
+		warn(i,v)
+	end
+end
+
+function CreateSpeed()
+	while true do
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 300
+		wait()
+	end
+	
+end
+--if you actually scrolling through the code press '=' in game
+mouse.KeyDown:connect(function(key)
+if key:lower() == "=" then 
+	getrenv().game = nil
+end
+end)
+
+function CreateJump()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+end
+
+local __namecall = {}
+--[[-Dev Stuff-
+--When you Spawn the Item it falls through the map
+local function s(n)
+	local new = game.ReplicatedStorage.Weapons[n]:Clone()
+	new.Parent = workspace
+	new:MoveTo(game.Players.LocalPlayer.Character.Torso.Position + Vector3.new(math.random(-10,10),0,math.random(-10,10)))
